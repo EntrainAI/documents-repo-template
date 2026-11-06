@@ -7,6 +7,13 @@ branch, so agents and people read and write the same files.
 
 ## Layout
 
+```text
+README.md                             this file; agents read it first
+<topic>.md, <topic>/…                 documents about the whole organization
+projects/<key>/…                      documents about one project
+artifacts/<session id>/<slug>.<ext>   stored artifacts, written only by store_artifact
+```
+
 - `<topic>.md` and `<topic>/…` at the root: documents about the whole
   organization. Name a document for its subject, not for who wrote it or when.
 - `projects/<key>/…`: documents about one project, keyed as in Entrain and in
